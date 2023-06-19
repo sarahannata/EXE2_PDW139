@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="script.js">
+    <title>DOM JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Add new song.</h3>
+        </div>
+        <form action="">
+            <label for="title">Title</label><br>
+            <input type="text" placeholder="title" id="title"><br><br>
+            <label for="singer">Singer</label><br>
+            <input type="text" placeholder="singer" id="singer"><br><br>
+            <label for="tanggal">Released Date</label><br>
+            <input type="date" id="tanggal"><br><br>
+
+            <p><b>Genre:</b></p>
+
+            <input type="radio" name="genre" id="rock" value="Rock">
+            <label for="rock">Rock</label><br>
+            <input type="radio" name="genre" id="hiphop" value="HipHop">
+            <label for="hiphop">HipHop</label><br>
+            <input type="radio" name="genre" id="pop" value="POP">
+            <label for="pop">POP</label><br>
+            <input type="radio" name="genre" id="rnb" value="R&B">
+            <label for="rnb">R&B</label><br><br>
+
+            <label for="lyrics">Lyrics</label><br>
+            <textarea placeholder="lyrics" name="lyrics" id="lyrics" 
+            cols="30" rows="5"></textarea><br><br>
+
+            <label for="selectOption">Singer Type:</label><br>
+            <select id="selectOption">
+                <option value="band">Band</option>
+                <option value="solo">Solo</option>
+                <option value="duet">Duet</option>
+                <option value="grup">Grup</option>
+            </select><br><br>
+
+            
+
+            <button type="submit" onclick="kirimData()">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
